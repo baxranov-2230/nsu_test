@@ -1,7 +1,7 @@
 import axios from "axios";
 
 
-const API_URL = import.meta.env.VITE_ORGANIZATION_API_URL;
+const API_URL = import.meta.env.VITE_TEST_API_URL;
 
 import axiosInstance from "./axiosinstance";
 

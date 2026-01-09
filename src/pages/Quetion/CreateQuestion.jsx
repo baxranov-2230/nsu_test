@@ -198,7 +198,7 @@ function CreateQuestion() {
         prepareData: function (formData) {
           const file = formData.get("files[0]");
           formData.delete("files[0]");
-          formData.append("file", file);
+          formData.append("upload_file", file);
           return formData;
         },
         isSuccess: function (resp) {

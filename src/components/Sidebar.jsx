@@ -16,7 +16,8 @@ function Sidebar({isOpen}) {
         const token = localStorage.getItem("token");
         if (token) {
             const decoded = jwtDecode(token);
-            setUserRole(decoded?.role[0]);
+            console.log(decoded);
+            setUserRole(decoded?.role);
         } else {
             setUserRole(null);
         }
